@@ -1,0 +1,9 @@
+:root {
+  .app.dark {
+    --bg: linear-gradient(110deg, #383838 0%, rgba(158, 158, 158, 0.00) 71.82%);
+  }
+
+  .app.light {
+    --bg: linear-gradient(113deg, #FFF 0.28%, rgba(70, 97, 115, 0.00) 178.65%);
+  }
+}
