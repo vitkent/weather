@@ -1,5 +1,13 @@
-.app {
+html {
+  font-size: 18px;
+}
+
+body{
   background: var(--bg);
+  color: var(--text-primary);
   font-family: var(--font);
   font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  height: 100vh;
 }

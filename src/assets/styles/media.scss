@@ -1,0 +1,16 @@
+/** breakpoints **/
+$media-sizes: (
+  "m": 375px,
+  "t": 768px,
+  "md": 1024px,
+  "d": 1280px,
+  "xl": 1440px,
+  "xxl": 1600px,
+  "xxxl": 1920px,
+);
+
+@mixin min-media($breakpoint) {
+  $size: map-get($media-sizes, $breakpoint);
+
+  @media (min-width: $size) { @content; }
+}

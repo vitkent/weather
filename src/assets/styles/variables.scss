@@ -1,11 +1,29 @@
 :root {
+  //fonts
   --font: "Poppins", system-ui, sans-serif;
 
-  .app.dark {
+  //themes
+  &[data-theme="dark"] {
     --bg: linear-gradient(110deg, #383838 0%, rgba(158, 158, 158, 0.00) 71.82%);
+    --text-primary: #ffffff;
   }
 
-  .app.light {
+  &[data-theme="light"] {
     --bg: linear-gradient(113deg, #FFF 0.28%, rgba(70, 97, 115, 0.00) 178.65%);
+    --text-primary: #292929;
+  }
+
+  //transition
+  --transition-time: 0.3s;
+
+  //container
+  --container-padding: 14px;
+
+  @include min-media('t') {
+    --container-padding: 40px;
+  }
+
+  @include min-media('d') {
+    --container-padding: 56px;
   }
 }
